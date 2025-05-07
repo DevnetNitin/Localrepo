@@ -1,6 +1,17 @@
-hi file abc1
-hi feature1
-hi feature1
-hi feature1
-hi feature1
-hi feature1
+
+while (True):
+    ip = input("Enter ip addrss: ")
+
+    if (ip.startswith("192.168")):
+        print("C")
+    elif (ip.startswith("10.")):
+        print("A")
+    elif (ip.startswith("172.") and float(ip[4:7]) >=16 and float(ip[4:7]) <= 31. ):
+        print("B")
+    else:
+        print("Public")        
+ 
+    choice = input("DO you want to contiue: ")
+    if (choice != "Y"):
+        exit()
+

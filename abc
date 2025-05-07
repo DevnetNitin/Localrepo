@@ -1,14 +1,105 @@
-ab
-abc
-abc
-abc
 
-feature 1
-hi nitin
-hi feature1
+################################################################
+ ping command format
+ dst_ip = "8.8.8.8"
+ src_ip = "1.1.1.1"
+ping_cmd = "ping {} source{}"
+a = ping_cmd.format(dst_ip,src_ip)
+
+print(a)
+
+################################################################
+
+#vlan format
+
+vlan_id = 10
+vlan_cmd = "vlan {}"
+
+a= vlan_cmd.format(vlan_id)
+
+print (a)
+
+##############################################################
+
+## check switch hotname is small or upper letter
+
+device_name = "Inharsw500"
+
+if (device_name == "INHARSW500"):
+    print("Device Found")
+else:
+    print("Device Not Found")
+    
+ ##############################################################
+ ## check switch hotname with upperfunction
+
+device_name = "Inharsw500"
+device_name.upper()
+
+if (device_name.upper() == "INHARSW500"):
+    print("Device Found")
+else:
+    print("Device Not Found")
+       
+## check switch hotname is small or upper letter
+
+device_name = "Inharsw500"
+device_name.upper()
+
+if (device_name.upper() == "INHARSW500"):
+    print("Device Found")
+else:
+    print("Device Not Found")
+    
+###############################################################
+
+    ## CHeck the ip address is private or public ( Class A and Class C)
+
+ip = "192.168.1.1."
+
+if (ip.startswith("10.1")):
+    print("Private ip address of class A")
+elif(ip.startswith("192.168.")):
+    print("Private ip address of classC")
+else:
+    print("ip address is public")
+
+##############################################################
+
+Concatenation  :- When adding string ( str1 + str2)
+Addition :- When adding int + int  or int + float
+
+We can type cast all int and  float values into string
+But we cannot typecase all string into integer or float.
 
 
-hi feature1
-hi feature1
-hi feature1
-mainmainmain
+
+Indentation
+concentation
+
+###################### Addition + Concatnation Examples ##############################
+
+a = "vlan "
+b  = "10"
+print (a+b)
+
+
+c = "nitin"
+d = "Vipin"
+print(c+" "+d)
+
+
+##########Typecasting :- like We  can convert string value into interger 
+
+a = int("10")
+b = 10
+
+print(a+b)
+
+ping_cmd = "ping" + "8.8.8.8"
+
+######################################################
+a = "vlan" + str(10)
+print(a)
+
+######################################################
